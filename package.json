@@ -1,5 +1,5 @@
 {
-  "name": "LinkedStateMixin",
+  "name": "react-linked-state",
   "version": "0.1.0",
   "description": "Deep path two-way binding for React.",
   "main": "index.js",

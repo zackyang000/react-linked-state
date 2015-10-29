@@ -5,15 +5,16 @@ Object.defineProperty(exports, '__esModule', {
 });
 function getIn(object, path) {
   var stack = path.split('.');
+  var current = object;
   while (stack.length > 1) {
-    object = object[stack.shift()];
+    current = current[stack.shift()];
   }
-  return object[stack.shift()];
+  return current[stack.shift()];
 }
 
 function updateIn(object, path, value) {
-  var current = object;
   var stack = path.split('.');
+  var current = object;
   while (stack.length > 1) {
     current = current[stack.shift()];
   }

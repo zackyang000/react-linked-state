@@ -13,6 +13,7 @@ function getIn(object, path) {
 }
 
 function updateIn(object, path, value) {
+  object = JSON.parse(JSON.stringify(object));
   var stack = path.split('.');
   var current = object;
   while (stack.length > 1) {

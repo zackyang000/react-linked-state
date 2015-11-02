@@ -1,11 +1,12 @@
 {
   "name": "react-linked-state",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Deep path two-way binding for React.",
   "main": "build/index.js",
   "scripts": {
     "test": "$(npm bin)/eslint src",
-    "build": "$(npm bin)/babel src --out-dir build"
+    "build": "$(npm bin)/babel src --out-dir build",
+    "prepublish": "make"
   },
   "repository": {
     "type": "git",

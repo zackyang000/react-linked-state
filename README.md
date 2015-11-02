@@ -14,6 +14,18 @@ npm install --save react-linked-state
 
 ## Usage
 
+Use it like official's [Two-Way Binding Helpers](https://facebook.github.io/react/docs/two-way-binding-helpers.html), the only different is this module support **deep path**.
+
 ```js
-import LinkedStateMixin from 'react-linked-state';
+var LinkedStateMixin = require('react-linked-state');
+
+var WithLink = React.createClass({
+  mixins: [LinkedStateMixin],
+  getInitialState: function() {
+    return {data: {message: 'Hello!'}};
+  },
+  render: function() {
+    return <input type="text" valueLink={this.linkState('data.message')} />;
+  }
+});
 ```

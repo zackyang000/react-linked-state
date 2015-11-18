@@ -14,10 +14,6 @@ npm install --save react-linked-state
 
 ## Usage
 
-```js
-var LinkedStateMixin = require('react-linked-state');
-```
-
 Use it like official's [Two-Way Binding Helpers](https://facebook.github.io/react/docs/two-way-binding-helpers.html), the only different is this module support **deep path**.
 
 ```js

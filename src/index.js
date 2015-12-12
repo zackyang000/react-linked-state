@@ -8,9 +8,8 @@ function getIn(object, path) {
 }
 
 function updateIn(object, path, value) {
-  object = JSON.parse(JSON.stringify(object));
   const stack = path.split('.');
-  let current = object;
+  let current = JSON.parse(JSON.stringify(object));
   while (stack.length > 1) {
     current = current[stack.shift()];
   }
